@@ -1,0 +1,31 @@
+stages:
+  - build
+  - test
+
+variables:
+  GYM_CODE_SIGNING_IDENTITY: ""
+  GYM_EXPORT_METHOD: "development"
+
+build:
+  stage: build
+  tags:
+    - macos
+  script:
+    - xcodebuild clean build \
+        -workspace MidtermProject.xcworkspace \
+        -scheme MidtermProject \
+        -sdk iphonesimulator \
+        -destination 'platform=iOS Simulator,name=iPhone 14' \
+        CODE_SIGNING_ALLOWED=NO
+
+test:
+  stage: test
+  tags:
+    - macos
+  script:
+    - xcodebuild test \
+        -workspace MidtermProject.xcworkspace \
+        -scheme MidtermProject \
+        -sdk iphonesimulator \
+        -destination 'platform=iOS Simulator,name=iPhone 14' \
+        CODE_SIGNING_ALLOWED=NO

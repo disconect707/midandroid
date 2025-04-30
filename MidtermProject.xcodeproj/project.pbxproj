@@ -13,6 +13,15 @@
 		AF2798AE2D81A07200F53C61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2798AD2D81A07200F53C61 /* Preview Assets.xcassets */; };
 		AF2798B52D81A0BF00F53C61 /* HobbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2798B42D81A0BF00F53C61 /* HobbyView.swift */; };
 		AF2798B72D81A0D800F53C61 /* SportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2798B62D81A0D800F53C61 /* SportView.swift */; };
+		AF49259A2DC23B460061D45A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4925992DC23B460061D45A /* CoreDataStack.swift */; };
+		AF49259C2DC23B520061D45A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49259B2DC23B520061D45A /* DIContainer.swift */; };
+		AF49259E2DC23B730061D45A /* ItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49259D2DC23B730061D45A /* ItemRepository.swift */; };
+		AF4925A02DC23B8F0061D45A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49259F2DC23B8F0061D45A /* Item.swift */; };
+		AF4925A22DC23BA90061D45A /* ItemRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4925A12DC23BA90061D45A /* ItemRepositoryProtocol.swift */; };
+		AF4925A42DC23BBF0061D45A /* FetchItemsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4925A32DC23BBF0061D45A /* FetchItemsUseCase.swift */; };
+		AF4925A62DC23BD20061D45A /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4925A52DC23BD20061D45A /* ItemListViewModel.swift */; };
+		AF4925AA2DC23F510061D45A /* MidtermModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF4925A82DC23F510061D45A /* MidtermModel.xcdatamodeld */; };
+		AF4925B22DC2554B0061D45A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AF4925B12DC2554B0061D45A /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,15 @@
 		AF2798AD2D81A07200F53C61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF2798B42D81A0BF00F53C61 /* HobbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyView.swift; sourceTree = "<group>"; };
 		AF2798B62D81A0D800F53C61 /* SportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportView.swift; sourceTree = "<group>"; };
+		AF4925992DC23B460061D45A /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		AF49259B2DC23B520061D45A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		AF49259D2DC23B730061D45A /* ItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepository.swift; sourceTree = "<group>"; };
+		AF49259F2DC23B8F0061D45A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AF4925A12DC23BA90061D45A /* ItemRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AF4925A32DC23BBF0061D45A /* FetchItemsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchItemsUseCase.swift; sourceTree = "<group>"; };
+		AF4925A52DC23BD20061D45A /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
+		AF4925A92DC23F510061D45A /* MidtermModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MidtermModel.xcdatamodel; sourceTree = "<group>"; };
+		AF4925B12DC2554B0061D45A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +57,8 @@
 		AF27989A2D81A06E00F53C61 = {
 			isa = PBXGroup;
 			children = (
+				AF4925B12DC2554B0061D45A /* .gitignore */,
+				AF4925A82DC23F510061D45A /* MidtermModel.xcdatamodeld */,
 				AF2798A52D81A06F00F53C61 /* MidtermProject */,
 				AF2798A42D81A06F00F53C61 /* Products */,
 			);
@@ -55,10 +75,10 @@
 		AF2798A52D81A06F00F53C61 /* MidtermProject */ = {
 			isa = PBXGroup;
 			children = (
-				AF2798A62D81A06F00F53C61 /* MidtermProjectApp.swift */,
-				AF2798A82D81A06F00F53C61 /* ContentView.swift */,
-				AF2798B42D81A0BF00F53C61 /* HobbyView.swift */,
-				AF2798B62D81A0D800F53C61 /* SportView.swift */,
+				AF4925902DC23AA30061D45A /* Infrastructure */,
+				AF49258F2DC23A970061D45A /* Presentation */,
+				AF49258E2DC23A8F0061D45A /* Data */,
+				AF49258D2DC23A830061D45A /* Domain */,
 				AF2798AA2D81A07200F53C61 /* Assets.xcassets */,
 				AF2798AC2D81A07200F53C61 /* Preview Content */,
 			);
@@ -71,6 +91,109 @@
 				AF2798AD2D81A07200F53C61 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF49258D2DC23A830061D45A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AF4925932DC23ADE0061D45A /* Repositories */,
+				AF4925922DC23AD20061D45A /* UseCases */,
+				AF4925912DC23AC40061D45A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AF49258E2DC23A8F0061D45A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF4925962DC23B120061D45A /* Repositories */,
+				AF4925952DC23B070061D45A /* Entities+CD */,
+				AF4925992DC23B460061D45A /* CoreDataStack.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AF49258F2DC23A970061D45A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AF4925A72DC23D0A0061D45A /* App */,
+				AF4925982DC23B2C0061D45A /* Views */,
+				AF4925972DC23B1C0061D45A /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AF4925902DC23AA30061D45A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				AF49259B2DC23B520061D45A /* DIContainer.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		AF4925912DC23AC40061D45A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AF49259F2DC23B8F0061D45A /* Item.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AF4925922DC23AD20061D45A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				AF4925A32DC23BBF0061D45A /* FetchItemsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		AF4925932DC23ADE0061D45A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AF4925A12DC23BA90061D45A /* ItemRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AF4925952DC23B070061D45A /* Entities+CD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Entities+CD";
+			sourceTree = "<group>";
+		};
+		AF4925962DC23B120061D45A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AF49259D2DC23B730061D45A /* ItemRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AF4925972DC23B1C0061D45A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AF4925A52DC23BD20061D45A /* ItemListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AF4925982DC23B2C0061D45A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF2798A82D81A06F00F53C61 /* ContentView.swift */,
+				AF2798B42D81A0BF00F53C61 /* HobbyView.swift */,
+				AF2798B62D81A0D800F53C61 /* SportView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF4925A72DC23D0A0061D45A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AF2798A62D81A06F00F53C61 /* MidtermProjectApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2798AE2D81A07200F53C61 /* Preview Assets.xcassets in Resources */,
+				AF4925B22DC2554B0061D45A /* .gitignore in Resources */,
 				AF2798AB2D81A07200F53C61 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +267,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF49259A2DC23B460061D45A /* CoreDataStack.swift in Sources */,
+				AF4925A42DC23BBF0061D45A /* FetchItemsUseCase.swift in Sources */,
 				AF2798A92D81A06F00F53C61 /* ContentView.swift in Sources */,
+				AF4925A22DC23BA90061D45A /* ItemRepositoryProtocol.swift in Sources */,
+				AF4925AA2DC23F510061D45A /* MidtermModel.xcdatamodeld in Sources */,
 				AF2798B72D81A0D800F53C61 /* SportView.swift in Sources */,
 				AF2798A72D81A06F00F53C61 /* MidtermProjectApp.swift in Sources */,
+				AF4925A02DC23B8F0061D45A /* Item.swift in Sources */,
+				AF49259C2DC23B520061D45A /* DIContainer.swift in Sources */,
+				AF4925A62DC23BD20061D45A /* ItemListViewModel.swift in Sources */,
 				AF2798B52D81A0BF00F53C61 /* HobbyView.swift in Sources */,
+				AF49259E2DC23B730061D45A /* ItemRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +479,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF4925A82DC23F510061D45A /* MidtermModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF4925A92DC23F510061D45A /* MidtermModel.xcdatamodel */,
+			);
+			currentVersion = AF4925A92DC23F510061D45A /* MidtermModel.xcdatamodel */;
+			path = MidtermModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AF27989B2D81A06E00F53C61 /* Project object */;
 }
